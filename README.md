@@ -1,4 +1,4 @@
-# 🗂️ Tasks Management API
+#  Tasks Management API
 
 This repository contains a simple and clean **FastAPI** application connected to a **PostgreSQL** database.  
 It provides a fully functional RESTful API for managing tasks — including creating, reading, updating, and deleting records.  
@@ -7,7 +7,7 @@ The project is designed to be lightweight, modular, and production-ready for dep
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 - CRUD operations for managing tasks  
 - High-performance backend built with **FastAPI**  
@@ -19,7 +19,7 @@ The project is designed to be lightweight, modular, and production-ready for dep
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 app/
@@ -39,7 +39,7 @@ README.md             # Project documentation
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 | Component | Technology |
 |------------|-------------|
@@ -53,7 +53,7 @@ README.md             # Project documentation
 
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint | Description |
 |---------|-----------|-------------|
@@ -65,7 +65,7 @@ README.md             # Project documentation
 
 ---
 
-## 🧩 Example Task Object
+##  Example Task Object
 
 ```json
 {
@@ -79,7 +79,7 @@ README.md             # Project documentation
 
 ---
 
-## ⚙️ Environment Variables
+##  Environment Variables
 
 Create a `.env` file in the root directory of your project and define:
 
@@ -90,46 +90,46 @@ APP_DEBUG=False
 
 
 
-## 🧱 Local Setup
+##  Local Setup
 
-### 1️⃣ Clone the Repository
+### 1 Clone the Repository
 ```bash
 git clone https://github.com/yourusername/fastapi-tasks.git
 cd fastapi-tasks
 ```
 
-### 2️⃣ Create and Activate a Virtual Environment
+### 2 Create and Activate a Virtual Environment
 ```bash
 python -m venv .venv
 source .venv/bin/activate      # On Linux or macOS
 .venv\Scripts\activate         # On Windows
 ```
 
-### 3️⃣ Install Dependencies
+### 3 Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Run the Application Locally
+### 4 Run the Application Locally
 ```bash
 uvicorn app.main:app --reload
 ```
 
-### 5️⃣ Access the API Docs
+### 5 Access the API Docs
 - Swagger UI → http://127.0.0.1:8000/docs  
 - Redoc → http://127.0.0.1:8000/redoc
 
 ---
 
-## ☁️ VPS Deployment (Ubuntu + Gunicorn + Nginx)
+##  VPS Deployment (Ubuntu + Gunicorn + Nginx)
 
-### 🧩 1. Update and Install Dependencies
+###  1. Update and Install Dependencies
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install python3 python3-venv python3-pip postgresql nginx git -y
 ```
 
-### 🧱 2. Clone the Project
+###  2. Clone the Project
 ```bash
 cd /home/ubuntu
 git clone https://github.com/mahan7t7/fiotrix.git
@@ -139,7 +139,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 🗄️ 3. Setup PostgreSQL
+###  3. Setup PostgreSQL
 ```bash
 sudo -u postgres psql
 CREATE DATABASE tasks_db;
@@ -157,7 +157,7 @@ DATABASE_URL=postgresql+psycopg2://fastapi_user:yourpassword@localhost:5432/task
 APP_DEBUG=False
 ```
 
-### 🔥 4. Start Gunicorn Service
+###  4. Start Gunicorn Service
 Test manually first:
 ```bash
 gunicorn app.main:app -w 3 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000
@@ -189,7 +189,7 @@ sudo systemctl start fastapi.service
 sudo systemctl status fastapi.service
 ```
 
-### 🌐 5. Configure Nginx Reverse Proxy
+###  5. Configure Nginx Reverse Proxy
 `sudo nano /etc/nginx/sites-available/fastapi`
 ```nginx
 server {
@@ -215,10 +215,10 @@ sudo systemctl restart nginx
 
 
 
-## 👨‍💻 Author
+##  Author
 
 **Mahan Tarighati**  
 Back-end Developer — Python | Django | FastAPI   
-📧 mahan7t7@gmail.com  
+ mahan7t7@gmail.com  
 
 ---
