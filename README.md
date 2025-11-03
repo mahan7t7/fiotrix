@@ -14,7 +14,7 @@ The project is designed to be lightweight, modular, and production-ready for dep
 - Database powered by **PostgreSQL**  
 - Organized modular structure for scalability  
 - Interactive API documentation via **Swagger UI** and **Redoc**  
-- Production-ready setup using **Gunicorn**,, **Gunicorn** **Systemd**, and **Nginx**  
+- Production-ready setup using **Gunicorn**,, **Uvicorn** **Systemd**, and **Nginx**  
 - Environment-based configuration through `.env`
 
 ---
