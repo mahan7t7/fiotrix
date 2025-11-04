@@ -92,30 +92,30 @@ APP_DEBUG=False
 
 ##  Local Setup
 
-### 1 Clone the Repository
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/yourusername/fastapi-tasks.git
 cd fastapi-tasks
 ```
 
-### 2 Create and Activate a Virtual Environment
+### 2. Create and Activate a Virtual Environment
 ```bash
 python -m venv .venv
 source .venv/bin/activate      # On Linux or macOS
 .venv\Scripts\activate         # On Windows
 ```
 
-### 3 Install Dependencies
+### 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4 Run the Application Locally
+### 4. Run the Application Locally
 ```bash
 uvicorn app.main:app --reload
 ```
 
-### 5 Access the API Docs
+### 5. Access the API Docs
 - Swagger UI → http://127.0.0.1:8000/docs  
 - Redoc → http://127.0.0.1:8000/redoc
 
